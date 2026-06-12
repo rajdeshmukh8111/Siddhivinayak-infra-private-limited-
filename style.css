@@ -406,6 +406,30 @@ transition:.4s;
 .footer-links a:hover{
 color:#d4af37;
 }
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+right:30px;
+bottom:30px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:35px;
+color:white;
+text-decoration:none;
+z-index:1000;
+box-shadow:0 0 25px rgba(37,211,102,.5);
+transition:.4s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
 
 .copyright{
 margin-top:30px;
