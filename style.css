@@ -204,3 +204,59 @@ margin-bottom:20px;
 .contact-card h2{
 margin-bottom:15px;
 }
+/* ABOUT SECTION */
+
+.about{
+padding:120px 8%;
+background:#050505;
+text-align:center;
+}
+
+.about h4{
+color:#d4af37;
+letter-spacing:4px;
+margin-bottom:20px;
+}
+
+.about h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+margin-bottom:30px;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:35px;
+color:#bbb;
+font-size:18px;
+}
+
+.stats{
+margin-top:80px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.box{
+background:#111;
+padding:50px;
+border-radius:20px;
+transition:.5s;
+}
+
+.box:hover{
+transform:translateY(-10px);
+}
+
+.box h2{
+font-size:50px;
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.box p{
+font-size:16px;
+line-height:25px;
+}
