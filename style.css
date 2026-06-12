@@ -617,3 +617,27 @@ font-size:18px;
 line-height:40px;
 color:#bbb;
 }
+/* LOCATION */
+
+.location{
+padding:120px 8%;
+background:black;
+text-align:center;
+}
+
+.location h4{
+color:#d4af37;
+letter-spacing:4px;
+margin-bottom:20px;
+}
+
+.location h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+margin-bottom:20px;
+}
+
+.location p{
+margin-bottom:50px;
+color:#bbb;
+}
