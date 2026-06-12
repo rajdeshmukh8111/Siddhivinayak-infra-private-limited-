@@ -641,3 +641,49 @@ margin-bottom:20px;
 margin-bottom:50px;
 color:#bbb;
 }
+/* TEAM SECTION */
+
+.team{
+padding:120px 8%;
+background:#050505;
+text-align:center;
+}
+
+.team h4{
+color:#d4af37;
+letter-spacing:4px;
+margin-bottom:20px;
+}
+
+.team h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+margin-bottom:70px;
+}
+
+.team-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.team-card{
+background:#111;
+padding:50px;
+border-radius:20px;
+transition:.5s;
+}
+
+.team-card:hover{
+transform:translateY(-10px);
+}
+
+.team-card h2{
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.team-card p{
+color:#bbb;
+line-height:32px;
+}
