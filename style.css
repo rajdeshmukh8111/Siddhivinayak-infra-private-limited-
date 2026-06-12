@@ -501,3 +501,54 @@ border-radius:50px;
 font-weight:600;
 cursor:pointer;
 }
+/* MEETING PAGE */
+
+.meeting{
+padding:120px 8%;
+background:black;
+min-height:100vh;
+text-align:center;
+}
+
+.meeting h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+margin-bottom:20px;
+}
+
+.meeting p{
+color:#aaa;
+margin-bottom:50px;
+}
+
+.meeting form{
+max-width:800px;
+margin:auto;
+}
+
+.meeting input,
+.meeting textarea{
+width:100%;
+padding:20px;
+margin-bottom:25px;
+background:#111;
+border:none;
+outline:none;
+color:white;
+border-radius:15px;
+}
+
+.meeting button{
+padding:18px 50px;
+background:#d4af37;
+border:none;
+border-radius:50px;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+transition:.4s;
+}
+
+.meeting button:hover{
+transform:scale(1.05);
+}
