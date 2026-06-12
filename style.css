@@ -374,3 +374,41 @@ margin-bottom:20px;
 line-height:30px;
 color:#bbb;
 }
+/* FOOTER */
+
+footer{
+padding:80px 8%;
+background:black;
+text-align:center;
+border-top:1px solid #222;
+}
+
+footer h2{
+font-family:'Playfair Display',serif;
+margin-bottom:20px;
+}
+
+footer p{
+color:#aaa;
+}
+
+.footer-links{
+margin:40px 0;
+}
+
+.footer-links a{
+text-decoration:none;
+color:white;
+margin:0 20px;
+transition:.4s;
+}
+
+.footer-links a:hover{
+color:#d4af37;
+}
+
+.copyright{
+margin-top:30px;
+font-size:14px;
+color:#777;
+}
