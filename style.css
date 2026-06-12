@@ -260,3 +260,71 @@ margin-bottom:15px;
 font-size:16px;
 line-height:25px;
 }
+/* VISION SECTION */
+
+.vision{
+padding:120px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:50px;
+background:#0a0a0a;
+flex-wrap:wrap;
+}
+
+.vision-left{
+flex:1;
+}
+
+.vision-left h4{
+color:#d4af37;
+letter-spacing:4px;
+margin-bottom:20px;
+}
+
+.vision-left h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+margin-bottom:30px;
+}
+
+.vision-left p{
+color:#bbb;
+line-height:35px;
+font-size:18px;
+margin-bottom:40px;
+}
+
+.vision-right{
+flex:1;
+display:grid;
+gap:25px;
+}
+
+.vision-card{
+background:#111;
+padding:40px;
+border-radius:20px;
+transition:.5s;
+}
+
+.vision-card:hover{
+transform:translateY(-10px);
+}
+
+.vision-card h2{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.vision-card p{
+color:#ccc;
+}
+
+@media(max-width:768px){
+
+.vision-left h1{
+font-size:45px;
+}
+
+}
