@@ -728,3 +728,42 @@ transition:.7s;
 .gallery-card:hover img{
 transform:scale(1.1);
 }
+
+/* HAMBURGER MENU */
+
+.hamburger{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
+}
+
+@media(max-width:768px){
+
+.hamburger{
+display:block;
+}
+
+.menu{
+position:absolute;
+top:90px;
+left:-100%;
+width:100%;
+background:black;
+display:flex;
+flex-direction:column;
+text-align:center;
+padding:30px 0;
+transition:.5s;
+}
+
+.menu.active{
+left:0;
+}
+
+.menu a{
+margin:20px 0;
+}
+
+}
+
