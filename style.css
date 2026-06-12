@@ -552,3 +552,22 @@ transition:.4s;
 .meeting button:hover{
 transform:scale(1.05);
 }
+/* LEGAL PAGES */
+
+.legal{
+padding:120px 10%;
+background:black;
+min-height:100vh;
+}
+
+.legal h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+margin-bottom:40px;
+}
+
+.legal p{
+font-size:18px;
+line-height:40px;
+color:#bbb;
+}
