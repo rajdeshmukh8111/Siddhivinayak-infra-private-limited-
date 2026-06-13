@@ -1012,3 +1012,32 @@ background:#d4af37;
 border-radius:10px;
 
 }
+/* FLOATING CONTACT */
+
+.floating-contact{
+
+position:fixed;
+left:20px;
+bottom:30px;
+display:flex;
+flex-direction:column;
+gap:15px;
+z-index:999;
+}
+
+.floating-contact a{
+
+width:55px;
+height:55px;
+border-radius:50%;
+background:#d4af37;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:24px;
+text-decoration:none;
+color:black;
+
+box-shadow:0 0 25px rgba(212,175,55,.5);
+
+} 
