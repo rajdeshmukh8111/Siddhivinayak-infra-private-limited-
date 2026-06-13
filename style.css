@@ -1041,3 +1041,55 @@ color:black;
 box-shadow:0 0 25px rgba(212,175,55,.5);
 
 } 
+.hero-content h1{
+
+animation:slideUp 1.5s ease;
+
+}
+
+@keyframes slideUp{
+
+from{
+
+transform:translateY(100px);
+
+opacity:0;
+
+}
+
+to{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+}
+.gallery-card img{
+
+transition:.7s;
+
+}
+
+.gallery-card:hover img{
+
+transform:scale(1.1);
+
+}
+section{
+
+border-bottom:1px solid rgba(212,175,55,.08);
+
+}
+.btn{
+
+transition:.5s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
