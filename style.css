@@ -904,3 +904,26 @@ cursor:pointer;
 display:none;
 z-index:999;
 }
+/* VIDEO GALLERY */
+
+.video-gallery{
+padding:120px 8%;
+background:black;
+text-align:center;
+}
+
+.video-gallery h4{
+color:#d4af37;
+letter-spacing:4px;
+}
+
+.video-gallery h1{
+font-size:60px;
+margin-bottom:50px;
+font-family:'Playfair Display',serif;
+}
+
+.video-gallery video{
+border-radius:25px;
+box-shadow:0 0 40px rgba(212,175,55,.3);
+}
