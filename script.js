@@ -62,3 +62,29 @@ hamburger.addEventListener("click", ()=>{
 menu.classList.toggle("active");
 
 });
+// SCROLL REVEAL
+
+window.addEventListener("scroll", reveal);
+
+function reveal(){
+
+var reveals = document.querySelectorAll(".reveal");
+
+for(var i=0;i<reveals.length;i++){
+
+var windowHeight = window.innerHeight;
+
+var elementTop =
+reveals[i].getBoundingClientRect().top;
+
+var elementVisible = 100;
+
+if(elementTop < windowHeight - elementVisible){
+
+reveals[i].classList.add("active");
+
+}
+
+}
+
+}
