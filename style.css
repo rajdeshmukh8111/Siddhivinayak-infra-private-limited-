@@ -887,3 +887,20 @@ font-family:'Playfair Display',serif;
 color:#bbb;
 line-height:35px;
 }
+/* TOP BUTTON */
+
+#topBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#d4af37;
+color:black;
+font-size:24px;
+cursor:pointer;
+display:none;
+z-index:999;
+}
