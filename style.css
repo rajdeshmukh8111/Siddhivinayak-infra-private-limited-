@@ -1093,3 +1093,57 @@ transition:.5s;
 transform:translateY(-5px);
 
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #111;
+    padding: 40px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 0 20px gold;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: gold;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #d4af37;
+}
+
+#status {
+    text-align: center;
+    margin-top: 10px;
+}
