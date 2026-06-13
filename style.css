@@ -766,4 +766,39 @@ margin:20px 0;
 }
 
 }
+/* SCROLL ANIMATION */
+
+.reveal{
+position:relative;
+transform:translateY(100px);
+opacity:0;
+transition:all 1s ease;
+}
+
+.reveal.active{
+transform:translateY(0);
+opacity:1;
+}
+
+
+/* PREMIUM HOVER EFFECTS */
+
+.box,
+.project-card,
+.team-card,
+.testimonial-card,
+.vision-card{
+transition:.5s;
+}
+
+.box:hover,
+.project-card:hover,
+.team-card:hover,
+.testimonial-card:hover,
+.vision-card:hover{
+
+transform:translateY(-15px);
+box-shadow:0 0 30px rgba(212,175,55,.3);
+
+}
 
