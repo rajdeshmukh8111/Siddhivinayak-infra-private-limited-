@@ -164,10 +164,13 @@ top:0,
 behavior:"smooth"
 
 });
+});
+const contactForm = document.getElementById("contact-form");
 
-};
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
+if(contactForm){
+
+contactForm.addEventListener("submit", function(e) {
+  
 
     const status = document.getElementById("status");
 
@@ -185,4 +188,6 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
         console.log(error);
     });
 });
+
+}
 
