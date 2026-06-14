@@ -165,24 +165,36 @@ behavior:"smooth"
 
 });
 });
-document.getElementById("contact-form").addEventListener("submit", function(e) {
+const contactForm = document.getElementById("contact-form");
 
-    const status = document.getElementById("status");
+if(contactForm){
 
-    emailjs.sendForm(
-        "service_q0rls7q",
-        "template_aqhqemd",
-        this
-    ).then(function() {
-        status.innerText = "Message sent successfully ✅";
-        status.style.color = "lightgreen";
-        document.getElementById("contact-form").reset();
-    }, function(error) {
-        status.innerText = "Failed to send message ❌";
-        status.style.color = "red";
-        console.log(error);
-    });
+contactForm.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const status = document.getElementById("status");
+
+emailjs.sendForm(
+"service_q0rls7q",
+"template_aqhqemd",
+this
+).then(function(){
+
+status.innerText = "Message sent successfully ✅";
+status.style.color = "lightgreen";
+
+document.getElementById("contact-form").reset();
+
+}, function(error){
+
+status.innerText = "Failed to send message ❌";
+status.style.color = "red";
+
+console.log(error);
+
+});
+
 });
 
 }
-
