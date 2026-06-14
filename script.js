@@ -123,17 +123,6 @@ counter.innerText = target;
 updateCounter();
 
 });
-// LOADER
-
-window.addEventListener("load", ()=>{
-
-setTimeout(()=>{
-
-document.getElementById("loader").style.display = "none";
-
-},2000);
-
-});
 
 // TOP BUTTON
 
@@ -164,7 +153,7 @@ top:0,
 behavior:"smooth"
 
 });
-});
+};
 const contactForm = document.getElementById("contact-form");
 
 if(contactForm){
