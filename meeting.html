@@ -59,6 +59,38 @@ Book Meeting
 </form>
 
 </section>
+<script>
 
+document.getElementById("meetingForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+emailjs.sendForm(
+"service_qorls7q",
+"template_aqhqemd",
+this
+)
+
+.then(function(){
+
+alert("Meeting request sent successfully!");
+
+document.getElementById("meetingForm").reset();
+
+})
+
+.catch(function(error){
+
+alert("Failed to send request.");
+
+console.log(error);
+
+});
+
+});
+
+</script>
+  
 </body>
 </html>
