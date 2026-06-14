@@ -87,12 +87,11 @@ document.getElementById("meetingForm").reset();
 
 .catch(function(error){
 
-alert("Failed to send request.");
+alert("Failed to send request.\n\n" + JSON.stringify(error));
 
 console.log(error);
 
 });
-
 });
 
 </script>
