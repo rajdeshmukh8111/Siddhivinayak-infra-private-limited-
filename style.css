@@ -1147,3 +1147,82 @@ button:hover {
     text-align: center;
     margin-top: 10px;
 }
+/* SERVICES */
+
+.services{
+
+padding:120px 8%;
+
+background:#050505;
+
+text-align:center;
+
+}
+
+.services h4{
+
+color:#d4af37;
+
+letter-spacing:4px;
+
+margin-bottom:20px;
+
+}
+
+.services h1{
+
+font-size:60px;
+
+margin-bottom:70px;
+
+font-family:'Playfair Display',serif;
+
+}
+
+.service-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:#111;
+
+padding:40px;
+
+border-radius:20px;
+
+transition:.5s;
+
+border:1px solid rgba(212,175,55,.2);
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(212,175,55,.3);
+
+}
+
+.service-card h2{
+
+color:#d4af37;
+
+margin-bottom:20px;
+
+}
+
+.service-card p{
+
+color:#bbb;
+
+line-height:28px;
+
+}
