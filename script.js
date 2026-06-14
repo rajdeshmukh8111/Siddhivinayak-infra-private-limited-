@@ -165,12 +165,7 @@ behavior:"smooth"
 
 });
 });
-const contactForm = document.getElementById("contact-form");
-
-if(contactForm){
-
-contactForm.addEventListener("submit", function(e) {
-  
+document.getElementById("contact-form").addEventListener("submit", function(e) {
 
     const status = document.getElementById("status");
 
