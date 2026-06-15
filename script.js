@@ -222,3 +222,66 @@ console.log(error);
 });
 
 }
+
+async function sendMessage() {
+
+const userInput = document.getElementById("userInput");
+const chatBox = document.getElementById("chatBox");
+
+const message = userInput.value.trim();
+
+if(message === "") return;
+
+// Show user message
+chatBox.innerHTML += `
+<div class="user-message">
+${message}
+</div>
+`;
+
+userInput.value = "";
+
+// Typing message
+chatBox.innerHTML += `
+<div class="bot-message" id="typing">
+Typing...
+</div>
+`;
+
+try{
+
+const result = await model.generateContent(
+companyInfo + "\nUser Question: " + message
+);
+
+const response = await result.response;
+const text = response.text();
+
+// Remove typing indicator
+document.getElementById("typing").remove();
+
+// Show Gemini reply
+chatBox.innerHTML += `
+<div class="bot-message">
+${text}
+</div>
+`;
+
+chatBox.scrollTop = chatBox.scrollHeight;
+
+}
+catch(error){
+
+document.getElementById("typing").remove();
+
+chatBox.innerHTML += `
+<div class="bot-message">
+⚠️ Sorry, something went wrong.
+</div>
+`;
+
+console.error(error);
+
+}
+
+}
