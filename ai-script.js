@@ -90,3 +90,4 @@ console.error(error);
 }
 
 }
+window.sendMessage = sendMessage;
