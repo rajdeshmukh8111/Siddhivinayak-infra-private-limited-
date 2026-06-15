@@ -23,8 +23,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 <p>
 Ask us anything about our projects and services.
 </p>
-
-<div class="chat-box">
+<div class="chat-box" id="chatBox">
 
 <div class="bot-message">
 👋 Welcome to Siddhivinayak Infra Private Limited.
@@ -41,17 +40,20 @@ We have been delivering quality construction solutions since 2008 with 15+ proje
 
 </div>
 
-<input type="text"
+<input
+type="text"
+id="userInput"
 placeholder="Type your message here...">
 
-<button class="send-btn">
+<button
+class="send-btn"
+onclick="sendMessage()">
 
 <i class="fa-solid fa-paper-plane"></i>
 
 Send
 
 </button>
-
 </section>
   
 <script type="module" src="script.js"></script>
