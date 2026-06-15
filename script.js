@@ -1,3 +1,12 @@
+import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
+const API_KEY = "AQ.Ab8RN6LVK17qHvBR7rwP22R4tOSDtRpWXMNAQPwhiAUNhn2kLA";
+
+const genAI = new GoogleGenerativeAI(API_KEY);
+
+const model = genAI.getGenerativeModel({
+  model: "gemini-2.5-flash"
+});
+
 // VIDEO MUTE / UNMUTE
 
 const video = document.getElementById("bgVideo");
