@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | Siddhivinayak Infra</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+background:black;
+color:white;
+font-family:Arial,sans-serif;
+}
+
+.dashboard{
+max-width:700px;
+margin:50px auto;
+padding:40px;
+background:#111;
+border-radius:20px;
+box-shadow:0 0 20px rgba(212,175,55,.4);
+}
+
+.dashboard h1{
+color:#d4af37;
+text-align:center;
+margin-bottom:30px;
+}
+
+.dashboard input,
+.dashboard textarea{
+
+width:100%;
+padding:15px;
+margin:15px 0;
+background:#222;
+border:none;
+border-radius:10px;
+color:white;
+
+}
+
+.dashboard button{
+
+width:100%;
+padding:15px;
+margin-top:20px;
+background:#d4af37;
+border:none;
+border-radius:10px;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+#preview{
+
+width:100%;
+margin-top:20px;
+border-radius:15px;
+display:none;
+
+}
+
+#status{
+
+margin-top:20px;
+text-align:center;
+color:lightgreen;
+
+}
+
+.logout-btn{
+background:red;
+margin-top:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="dashboard">
+
+<h1>Admin Dashboard</h1>
+
+<input
+type="text"
+id="title"
+placeholder="Project Title">
+
+<textarea
+id="description"
+placeholder="Project Description">
+</textarea>
+
+<input
+type="file"
+id="imageInput"
+accept="image/*">
+
+<img
+id="preview">
+
+<button onclick="uploadImage()">
+Upload Project
+</button>
+
+<button
+class="logout-btn"
+onclick="logout()">
+Logout
+</button>
+
+<p id="status"></p>
+
+</section>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
