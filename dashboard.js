@@ -51,7 +51,7 @@ localStorage.setItem(
 "latestImage",
 data.secure_url
 );
-
+window.location.href = "gallery.html";
 document.getElementById("status").innerText =
 "✅ Project uploaded successfully";
 
