@@ -1448,3 +1448,52 @@ border-top:1px solid rgba(212,175,55,.2);
 .footer h2{
 color:#d4af37;
 }
+
+.projects-hero{
+padding:140px 10%;
+text-align:center;
+background:black;
+color:white;
+}
+
+.projects-hero h4{
+color:#d4af37;
+letter-spacing:4px;
+}
+
+.projects-hero h1{
+font-size:70px;
+margin:20px 0;
+color:#d4af37;
+}
+
+.project-title{
+text-align:center;
+color:#d4af37;
+font-size:45px;
+margin:80px 0 40px;
+}
+
+.status{
+padding:8px 15px;
+border-radius:30px;
+font-size:12px;
+font-weight:bold;
+display:inline-block;
+margin-bottom:20px;
+}
+
+.ongoing{
+background:#0f5132;
+color:white;
+}
+
+.upcoming{
+background:#664d03;
+color:white;
+}
+
+.completed{
+background:#1e3a8a;
+color:white;
+}
