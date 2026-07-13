@@ -1,171 +1,92 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-background:#000;
-overflow:hidden;
-font-family:'Poppins',sans-serif;
-}
+/* ===== VERSION 2 EFFECTS ===== */
 
 #loader{
-width:100%;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:black;
-position:relative;
+background:
+radial-gradient(circle at center,#181818 0%,#080808 45%,#000 100%);
 }
 
-.overlay{
+#loader::before{
+content:"";
 position:absolute;
-width:100%;
-height:100%;
-background:radial-gradient(circle,#1b1b1b 0%,#000 80%);
-}
-
-.content{
-position:relative;
-z-index:5;
-text-align:center;
+width:700px;
+height:700px;
+border-radius:50%;
+background:radial-gradient(circle,
+rgba(212,175,55,.08),
+transparent 70%);
+animation:pulseGlow 5s infinite;
 }
 
 .content h1{
-
-font-size:70px;
-
-color:#d4af37;
-
-letter-spacing:10px;
-
-font-family:'Playfair Display',serif;
-
-opacity:0;
-
-animation:title 2s forwards;
-
+position:relative;
+overflow:hidden;
 }
 
-.content h2{
-
-margin-top:12px;
-
-font-size:20px;
-
-letter-spacing:12px;
-
-color:white;
-
-opacity:0;
-
-animation:subtitle 2s forwards;
-
-animation-delay:.6s;
-
-}
-
-.gold-line{
-
-height:2px;
-
-background:#d4af37;
-
-margin:25px auto;
-
-width:0;
-
-animation:line 2s forwards;
-
+.content h1::after{
+content:"";
+position:absolute;
+top:0;
+left:-120%;
+width:60%;
+height:100%;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.7),
+transparent
+);
+transform:skewX(-20deg);
+animation:goldShine 3s infinite;
 }
 
 .loading{
-
-margin:45px auto;
-
-width:320px;
-
-height:5px;
-
-background:#222;
-
-border-radius:50px;
-
-overflow:hidden;
-
+box-shadow:
+0 0 15px rgba(212,175,55,.25);
 }
 
 .loading-fill{
-
-height:100%;
-
-width:0;
-
-background:linear-gradient(90deg,#8b6a00,#ffd700,#fff2a8,#ffd700);
-
-animation:load 3.5s linear forwards;
-
+box-shadow:
+0 0 20px rgba(212,175,55,.7);
 }
 
 .loading-text{
+animation:blink 1.8s infinite;
+}
 
-margin-top:18px;
+@keyframes goldShine{
 
-color:#aaa;
+0%{
+left:-120%;
+}
 
-letter-spacing:4px;
-
-font-size:14px;
+100%{
+left:150%;
+}
 
 }
 
-@keyframes title{
+@keyframes pulseGlow{
 
-from{
+0%,100%{
+transform:scale(1);
+opacity:.3;
+}
 
-opacity:0;
-
-transform:translateY(40px);
+50%{
+transform:scale(1.15);
+opacity:.7;
+}
 
 }
 
-to{
+@keyframes blink{
 
+0%,100%{
+opacity:.4;
+}
+
+50%{
 opacity:1;
-
-transform:translateY(0);
-
 }
 
-}
-
-@keyframes subtitle{
-
-to{
-
-opacity:1;
-
-}
-
-}
-
-@keyframes line{
-
-to{
-
-width:340px;
-
-}
-
-}
-
-@keyframes load{
-
-to{
-
-width:100%;
-
-}
 }
