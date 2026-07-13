@@ -188,3 +188,19 @@ console.log(error);
 
 }
 
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+const loader=document.getElementById("loader");
+
+loader.classList.add("hide");
+
+setTimeout(()=>{
+loader.remove();
+},1000);
+
+},3500);
+
+});
+
