@@ -188,19 +188,22 @@ console.log(error);
 
 }
 
-window.addEventListener("load",()=>{
+window.addEventListener("load", function () {
 
-setTimeout(()=>{
+    const loader = document.getElementById("loader");
 
-const loader=document.getElementById("loader");
+    if (!loader) return;
 
-loader.classList.add("hide");
+    setTimeout(function () {
 
-setTimeout(()=>{
-loader.remove();
-},1000);
+        loader.classList.add("hide");
 
-},3500);
+        setTimeout(function () {
+            loader.style.display = "none";
+        }, 700);
+
+    }, 1500);
 
 });
-
+});
+}
