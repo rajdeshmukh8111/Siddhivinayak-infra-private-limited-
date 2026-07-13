@@ -1629,6 +1629,7 @@ transition:opacity 1s ease,visibility 1s ease;
 #loader.hide{
 opacity:0;
 visibility:hidden;
+transition:0.7s ease;
 }
 
 .loader-content{
