@@ -261,3 +261,14 @@ opacity:1;
 }
 
 }
+.luxury-divider{
+width:420px;
+height:1px;
+margin:35px auto;
+background:linear-gradient(
+90deg,
+transparent,
+#d4af37,
+transparent
+);
+}
